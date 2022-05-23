@@ -1,11 +1,10 @@
 class AES:
 
-    def __init__(self, message, key, zeroes=0):
-        self.message = message
-        self.key = key
-        self.original_key = key
-        self.zeroes = zeroes
+    def __init__(self, message, key):
         self.msg_save = ''
+        self.message = message
+        self.original_key = key
+        self.key = key
 
     @classmethod
     def parse_text(cls, text, key):
