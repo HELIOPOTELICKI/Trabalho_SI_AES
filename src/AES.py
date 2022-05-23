@@ -36,7 +36,6 @@ class AES:
 
         return AES(text, key)
 
-    # Add Round Key na Matriz de Estado
     def add_round_key(self):
         for i in range(0, len(self.message)):
             self.message[i] = format(
